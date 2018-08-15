@@ -12,11 +12,22 @@
 class Dog():
     #EVERY METHOD CALL ASSOCIATED WITH A CLASS AUTOMATICALLY PASSES SELF WHICH IS A REFERENCE TO THE INSTANCE ITSELF
     #SELF GIVES THE INDIVIDUAL INSTANCE ACCESS TO THE ATTRIBUTES AND METHODS IN THAT CLASS
-    def__init__(self, name, age):
+    #IT IS THE __INIT__ METHOD IN PARTICULAR WHICH WILL CREATE AN INSTANCE
+    def __init__(self, name, age):
     #ANY VARIABLE PREFIXED WITH SELF IS AVAILABLE TO EVERY METHOD IN THE CLASS
-    self.name = name
-    self.age = age
+        self.name = name
+        self.age = age
     def sit(self):
         print(self.name.title()+"is now sitting")
     def roll(self):
         print(self.name.title()+"has just rolled over")
+
+
+#MAKING AN INSTANCE FROM A CLASS
+my_dog = Dog('willie',6)
+print("My dogs name is "+ my_dog.name.title()+".")
+print("My dog is "+ str(my_dog.age) +" years old.")
+
+
+
+
