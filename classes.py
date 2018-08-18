@@ -54,8 +54,8 @@ class Restaurant():
         print("WE ARE NOW OPEN")
 
 restaurant = Restaurant('Casalobo','goan')
-restaurant_name = Restaurant.describe_restaurant()
-print(restaurant_name)
+restaurant.describe_restaurant()
+restaurant.open_restaurant()
 
 
 
